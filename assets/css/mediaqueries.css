@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* BETTER MOBILES (iPhone 11+)  */
+@media screen and (min-width: 390px) {
+    body {
+        background-image: url('../../assets/images/smallbackground1.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 0% 100%;
+    }
+
+    main {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+/* TABLETS (PORTRAIT) */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url('../../assets/images/background.jpg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+    }
+
+    main {
+        width: 450px;
+        height: 250px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+}
+
+/* TABLETS (LANDSCAPE) & SMALL LAPTOPS */
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 500px;
+        height: 300px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+}
+
+/* DEFAULT DESKTOPS (FHD MONITORS) */
+@media screen and (min-width: 1200px) {
+    main {
+        width: 600px;
+        height: 300px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.35em;
+    }
+}
