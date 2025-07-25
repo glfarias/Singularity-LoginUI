@@ -11,7 +11,8 @@ body {
     font-size: 1em;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(180deg, #B5B5B5, #C7C7C7, #F9F9F9);
+    background-image: linear-gradient(180deg, #C7C7C7, #B5B5B5, #1a1a1a);
+    background-repeat: no-repeat;
     }
 
 main {
@@ -20,7 +21,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
-    width: 250px;
+    width: 300px;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 10px #000000;
@@ -39,4 +40,57 @@ main {
     font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
     text-align: center;
     margin-top: 5px;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 1.2rem;
+}
+
+.login, .password {
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+ion-icon {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: black;
+    color: #00ff00;
+    border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0px 0px 10px #00ff00;
+}
+
+ion-icon:hover {
+    transform: scale(1.1);
+}
+
+#idlogin, #idpassword {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8em;
+    caret-color: #00ff00;
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+
+#idlogin:focus, #idpassword:focus {
+    box-shadow: 0px 2px 0px #00ff00;
+    outline: 0;
+}
+
+#idlogin::placeholder, #idpassword::placeholder {
+    color: #00ff00;
 }
