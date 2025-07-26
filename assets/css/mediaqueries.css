@@ -11,7 +11,11 @@
 
     main {
         width: 350px;
-        height: 250px;
+        height: 300px;
+    }
+
+    form {
+        width: 350px;
     }
 }
 
@@ -25,8 +29,12 @@
     }
 
     main {
-        width: 500px;
-        height: 300px;
+        width: 375px;
+        height: 325px;
+    }
+
+    form {
+        width: 350px;
     }
 
     .title {
@@ -42,8 +50,12 @@
 
 @media screen and (min-width: 1024px) {
     main {
-        width: 600px;
-        height: 300px;
+        width: 400px;
+        height: 350px;
+    }
+
+    form {
+        width: 375px;
     }
 
     .title {
@@ -58,8 +70,12 @@
 /* DEFAULT DESKTOPS (FHD MONITORS) */
 @media screen and (min-width: 1200px) {
     main {
-        width: 600px;
-        height: 300px;
+        width: 425px;
+        height: 375px;
+    }
+
+    form {
+        width: 400px;
     }
 
     .title {

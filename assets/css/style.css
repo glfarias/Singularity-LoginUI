@@ -7,11 +7,15 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     font-size: 1em;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(180deg, #C7C7C7, #B5B5B5, #1a1a1a);
+    background-image: linear-gradient(180deg, #c7c7c7, #b5b5b5, #1a1a1a);
     background-repeat: no-repeat;
     }
 
@@ -31,7 +35,7 @@ main {
     font-size: 1.2em;
     font-family: 'Orbitron', Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 35px;
     text-shadow: 1px 1px 1px rgba(13, 13, 13, 50);
 }
 
@@ -49,8 +53,9 @@ form {
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     gap: 1.2rem;
+    padding: 0 5px;
 }
 
 .login, .password {
@@ -60,7 +65,7 @@ form {
     justify-content: center;
 }
 
-ion-icon {
+#login-icon, #password-icon {
     font-size: 1.5em;
     font-weight: bold;
     background-color: black;
@@ -70,11 +75,11 @@ ion-icon {
     box-shadow: 0px 0px 10px #00ff00;
 }
 
-ion-icon:hover {
+#login-icon:hover, #password-icon:hover {
     transform: scale(1.1);
 }
 
-#idlogin, #idpassword {
+#password-input, #login-input {
     font-family: 'Courier New', Courier, monospace;
     font-size: .8em;
     caret-color: #00ff00;
@@ -82,15 +87,24 @@ ion-icon:hover {
     background-color: #000000;
     width: 100%;
     border-radius: 3px;
-    padding: 4px;
+    padding: 4px; 
 }
 
 
-#idlogin:focus, #idpassword:focus {
+#password-input:focus, #login-input:focus {
     box-shadow: 0px 2px 0px #00ff00;
     outline: 0;
 }
 
-#idlogin::placeholder, #idpassword::placeholder {
+#password-input::placeholder, #login-input::placeholder {
     color: #00ff00;
+}
+
+#password-show, #password-hide {
+    position: absolute;
+    bottom: 5px;
+    right: 60px;
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
 }
